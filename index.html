@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:hsl(0, 0%, 90%);
+        }
+        
+        .nav-container{
+            display:flex;
+            background-color:#913175 ; 
+            height: 70px;
+            text-align: center;
+            align-items: center;
+            justify-content: end;
+            border-radius: 0px;
+            box-shadow: 0px 0px 6px 3px grey;
+            
+        }
+        .navbar-itoms{
+            margin-left: 25px;
+            margin-right: 10px;
+            color: #E9E8E8;
+            cursor: pointer;
+            font-size: 25px;
+            
+
+        }
+         .navbar-itoms:hover{
+            box-shadow:0 5px #ff9999 ;
+            transition: 0.5s;
+            border-radius: 35px;
+            padding: 7px;
+            transition: .40s;}
+         
+        .navbar-title{
+            color: wheat;
+            font-size: 50px;
+            justify-content: left;
+            display: block;
+            margin-right: auto;
+            text-shadow:0px 0px 2px #330000;
+            
+        
+        }
+        .logo{
+            height: 50px;
+            display:block;
+            margin-left: 40px;
+            posotion:relative;
+            
+        }
+        .search-bar{
+            text-align: center;
+            border-radius: 5px solid gray;
+            border: 15px;
+            height: 30px;
+            width:60px ;
+
+
+
+        }
+        
+       
+       .image{
+        display:block;
+        width: auto;
+        height: 100px;
+        text-align: center;
+        margin-left: 300px;
+        width:800px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 6px 3px #330000;
+       }
+    
+  .card-container{
+ background-color:#f8c8ea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px 3px gray;
+  height: 500px;
+  }
+
+.card-container-itom{
+background-color:#f8c8ea ;
+display: block;
+ height: 320px;
+ width: 210px;
+ margin: 10px;
+ padding: 10px;
+ box-shadow: 0.5px 0.5px 1px 1px #3d3737;
+}
+.card-container-itom:hover{
+            box-shadow:0 2px rgb(226, 193, 193);
+            transition: 0.5s;
+            border-radius: 5px;
+            
+            transition: .2s;}
+.card-image{
+    width:150px;
+    background-color: #7B8FA1;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px ;
+  box-shadow: 0px 0px 3px 3px gray;
+    align-items: center;
+
+}
+.card-img-title{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.explore-button{
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #f8c8ea;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px gray;
+}
+    .explore-button:hover{
+        box-shadow:0 10px #282A3A ;
+            transition: 0.8s;
+            border-radius: 30px;
+            padding: 9px;
+            transition: .45s;
+         
+        }
+
+
+    </style>
+</head>
+<body>
+    <i>
+    <div class="nav-container">
+        <img src="book-logo.png" class="logo" />
+        <div class="navbar-title">Book-Nook....</div>
+        <div class="navbar-itoms">home</div>
+        <div class="navbar-itoms" >contact</div>
+        <div class="navbar-itoms" >about</div>
+        <div class="navbar-itoms">log-in</div>
+        
+            
+        </div>
+    </div></i>
+    <img src="./../image/book-2.jpg" height="80px" width="800px" class="image" /><br>
+
+     <div class="card-container">
+     <div class="card-container-itom">
+        <img src="./../image/novel1.webp" class="card-image"/>
+        <h3 class="card-img-title">Novels...</h3> 
+        <button class="explore-button">Quick view</button>
+
+        
+    </div>
+     <div class="card-container-itom">
+        <img src="./../image/nv.jpg" class="card-image"/>
+        <h3 class="card-img-title">Turn Of Light</h3> 
+        <button class="explore-button">Quick view</button>
+
+    </div>
+     <div class="card-container-itom"><img src="./../image/nv3.jpg" class="card-image"/>
+
+        <h3 class="card-img-title">The -Hunger</h3> 
+        <button class="explore-button">Quick view</button>
+
+    </div>
+     <div class="card-container-itom">
+        <img src="./../image/book-magic-1-cover-nv.jpg" class="card-image"/>
+        <h3 class="card-img-title">Magic-books</h3> 
+        <button class="explore-button">Quick view</button>
+
+     </div>
+     
+    </div>
+       </body>
+       </html> 
