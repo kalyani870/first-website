@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         body{
             background-color:hsl(0, 0%, 90%);
         }
@@ -24,7 +25,7 @@
         .navbar-itoms{
             margin-left: 25px;
             margin-right: 10px;
-            color: #E9E8E8;
+            color: wheat;
             cursor: pointer;
             font-size: 25px;
             
@@ -78,39 +79,45 @@
        }
     
   .card-container{
- background-color:#f8c8ea;
-  display: flex;
+ background-color:white;
+  display:flex;
   flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 0px 3px 3px gray;
-  height: 500px;
+  justify-content:space-evenly;
+  box-shadow: 0px 0px 0px 0px rgb(133, 131, 131);
+  height: auto;
   }
 
 .card-container-itom{
-background-color:#f8c8ea ;
-display: block;
- height: 320px;
- width: 210px;
+background-color: rgb(221, 219, 219);#f8c8ea
+display:flex;
+flex-direction:row;
+ height: 330px;
+ width: 200px;
  margin: 10px;
  padding: 10px;
- box-shadow: 0.5px 0.5px 1px 1px #3d3737;
+ box-shadow: 1px 1px 2px 2px rgb(27, 21, 21) ;
+ border-radius: 5px;
 }
+
 .card-container-itom:hover{
-            box-shadow:0 2px rgb(226, 193, 193);
-            transition: 0.5s;
-            border-radius: 5px;
-            
-            transition: .2s;}
+            box-shadow:0 0px rgb(133, 128, 128);
+            transition: 0.5s ;
+            border-radius: 2px;
+            padding: 5px;
+            transform: rotate(5deg);
+            transform: scale(1.1);
+            transition: .2s rgb(83, 73, 73);}
 .card-image{
     width:150px;
-    background-color: #7B8FA1;
+    background-color: #88949e;#7B8FA1#7B8FA1
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top:6px;
     height:200px ;
-  box-shadow: 0px 0px 3px 3px gray;
+ 
     align-items: center;
 
 }
@@ -118,6 +125,7 @@ display: block;
     text-align: center;
     font-size: 20px;
     margin-top: 5px;
+    margin-bottom: 2px;
 }
 .explore-button{
     text-align: center;
@@ -125,23 +133,50 @@ display: block;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    background-color: #f8c8ea;
+    background-color: #A4EBF3;
     border-radius: 15px;
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 0px 0px 2px 2px gray;
+    box-shadow: 0px 0px 2px 2px gray; #b37c08
 }
     .explore-button:hover{
-        box-shadow:0 10px #282A3A ;
+        box-shadow:0 3px rgb(77, 55, 55) ;
             transition: 0.8s;
             border-radius: 30px;
             padding: 9px;
             transition: .45s;
+            background-color: #980F5A;
+            color:aliceblue;
          
         }
-
-
+       .card-discount{
+        background-color:#c03c80 ;
+        margin-top: 2px;
+        width:70px;
+        margin-left: 1px;
+        box-shadow: 0px 0px 2px 2px rgb(155, 154, 154);
+        border-radius: 3px 2px 2px 2px;
+       }
+       .price{
+        font-size:15ps ;
+        margin-top:2px ;
+        margin-bottom: 4px;
+        color:#570530;
+        text-align: center;
+       }
+       .del-price{
+        font-size:15ps ;
+        margin-top:2px ;
+        margin-bottom: 4px;
+        color:#9b2763;
+       }
+       .Add-to-card{
+        text-align: end;
+        
+        color: blue;
+       }
+       
     </style>
 </head>
 <body>
@@ -161,31 +196,50 @@ display: block;
 
      <div class="card-container">
      <div class="card-container-itom">
-        <img src="./../image/novel1.webp" class="card-image"/>
+        <h3 class="card-discount"> 40% off</h3>
+         <img src="./../image/novel1.webp" class="card-image"/>
         <h3 class="card-img-title">Novels...</h3> 
+        <h4 class="price">Rs.299 <del class="del-price">Rs.400</del> </h4>
+        <button class="explore-button">Quick view</button></div>
+        
+    
+     <div class="card-container-itom">
+        <h3 class="card-discount"> 40% off</h3>
+         <img src="./../image/nv.jpg" class="card-image"/>
+        <h3 class="card-img-title">Turn Of Light</h3> 
+        <h4 class="price">Rs.299 <del class="del-price">Rs.400</del> </h4>
         <button class="explore-button">Quick view</button>
-
         
     </div>
      <div class="card-container-itom">
-        <img src="./../image/nv.jpg" class="card-image"/>
-        <h3 class="card-img-title">Turn Of Light</h3> 
-        <button class="explore-button">Quick view</button>
-
-    </div>
-     <div class="card-container-itom"><img src="./../image/nv3.jpg" class="card-image"/>
-
+        <h3 class="card-discount"> 40% off</h3>
+        <img src="./../image/nv3.jpg" class="card-image"/>
         <h3 class="card-img-title">The -Hunger</h3> 
-        <button class="explore-button">Quick view</button>
+        <h4 class="price">Rs.299 <del class="del-price">Rs.400</del> </h4>
+        <button class="explore-button">Quick view</button></div>
+        
 
-    </div>
      <div class="card-container-itom">
-        <img src="./../image/book-magic-1-cover-nv.jpg" class="card-image"/>
+        <h3 class="card-discount"> 40% off</h3>
+        <img src="./../image/nove4.jpg" class="card-image"/>
         <h3 class="card-img-title">Magic-books</h3> 
+        <h4 class="price">Rs.299 <del class="del-price">Rs.400</del></h4>
         <button class="explore-button">Quick view</button>
+    </div> 
+    
+    <div class="card-container"></div>
+    
+        <div class="card-container-itom">
+            <h3 class="card-discount"> 40% off </h3>
+            <img src="./../image/book-magic-1-cover-nv.jpg" class="card-image"/>
+            <h3 class="card-img-title">Magic-books</h3> 
+            <h4 class="price">Rs.299 <del class="del-price">Rs.400</del></h4>
+            <button class="explore-button">Quick view</button></div>
 
-     </div>
-     
-    </div>
-       </body>
-       </html> 
+        
+        
+    </div> 
+    
+   
+</div>
+       
